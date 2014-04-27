@@ -1,5 +1,7 @@
-# fizz_buzz_test.rb
+# fizzBuzzTest.rb
+require_relative 'FizzBuzz.rb'
 require 'test/unit'
+
 class FizzBuzzTest < Test::Unit::TestCase
 
   def fizz_buzz
@@ -18,16 +20,4 @@ class FizzBuzzTest < Test::Unit::TestCase
     end
   end
 
-end
-
-class FizzBuzz
-
-  def say(num)
-  	if(num % 5 == 0)
-    	return "Buzz"
-    else
-    	return "Fizz"
-    end
-  end
-  
 end
